@@ -75,8 +75,7 @@ _array_interface_dtype_map = {
 
 
 def _get_cpp_type_from_numpy_type(dtype):
-    cpptypes = {
-                "i1": "std::int8_t",
+    cpptypes = {                        # The std::int8_t gives error, it becomes char and char* in the constructor of RVec
                 "i2": "std::int16_t",
                 "i4": "std::int32_t",
                 "i8": "Long64_t", 
