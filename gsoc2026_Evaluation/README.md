@@ -1,5 +1,5 @@
 ## Project: HLS4ML Integration for fast ML Inference
-I have solved this task and have added some tests in the `/tests` folder. Here I will write about how I have developed this parser and how to use it.
+I have solved this task and have added some tests too, the `/models` folder has 3 .onnx files, one is of the test, and other 2 are created to test the parser. Here I will write about how I have developed this parser and how to use it.
 
 #### Parser Design
 The parser is designed in such a way that, it takes a model stored in `.onnx` format and firstly runs some pre-check on this onnx model. The pre-checks are very important for the successfull
@@ -23,6 +23,12 @@ HLS4ML has namely 5 backends that are: `Vivado`, `Vitis`, `Quartus`, `Catapult`,
 This parser takes some command lines arguments to which are indeed important for its functioning. `--modelPath` argument takes the relative path of the model stored in onnx file format, `--backend` argument takes the user specified backend for the hls4ml, `-L` is a flag, if set it prints just the layer wise configuration of the parsed hls4ml in memory model, `-IO` is another flag which if set, just prints the input and output layer configuration of the hls4ml in memory model.\
 \
 Usage: `python3 hls4ml_parser.py --backend Vivado --modelPath models/model.onnx -L -IO`
+
+#### Tests
+For running the tests, see below commands:\
+`python3 hls4ml_parser.py --backend Quartus --modelPath models/model.onnx -L`\
+`python3 hls4ml_parser.py --backend Vitis --modelPath models/model_comp.onnx -L`\
+`python3 hls4ml_parser.py --backend Vivado --modelPath models/ConvWithAsymmetricPadding.onnx -L`\
 
 #### References
 1. https://github.com/fastmachinelearning/hls4ml/blob/main/hls4ml/model/layers.py - tells which all layers are supported by hls4ml and what all functions each of the class supports..
