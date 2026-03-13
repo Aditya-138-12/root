@@ -1,0 +1,17 @@
+hls4ml==1.1.0
+onnx==1.17.0
+qonnx==0.4.0.post1.dev16+ged33937
+
+numpy
+h5py
+pyyaml
+pydigitalwavetools
+
+attrs
+bitstring
+clize
+importlib-metadata
+onnxruntime
+protobuf
+sigtools
+toposort
