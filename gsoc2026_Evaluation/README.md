@@ -33,3 +33,6 @@ For running the tests, see below commands:\
 #### References
 1. https://github.com/fastmachinelearning/hls4ml/blob/main/hls4ml/model/layers.py - tells which all layers are supported by hls4ml and what all functions each of the class supports..
 2. https://github.com/fastmachinelearning/hls4ml/tree/main/hls4ml/backends - for working with the backend.
+
+#### Update Regarding GSoC 2026
+I did not get selected as a contributor for this project.
