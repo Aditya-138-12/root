@@ -35,4 +35,4 @@ For running the tests, see below commands:\
 2. https://github.com/fastmachinelearning/hls4ml/tree/main/hls4ml/backends - for working with the backend.
 
 #### Update Regarding GSoC 2026
-I did not get selected as a contributor for this project.
+I did not got selected as a contributor for this project.
